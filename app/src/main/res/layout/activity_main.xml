@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:minHeight="48dp"
+        tools:ignore="Autofill,TextFields" />
+
+    <EditText
+        android:id="@+id/editTextTweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Tweet"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnPostTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTweet"
+        android:layout_marginTop="16dp"
+        android:text="POST TWEET"/>
+
+    <Button
+        android:id="@+id/btnDeleteTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPostTweet"
+    android:layout_marginTop="16dp"
+    android:text="DELETE" />
+
+    <Button
+        android:id="@+id/btnUpdateTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteTweet"
+        android:layout_marginTop="16dp"
+        android:text="UPDATE" />
+</RelativeLayout>
